@@ -24,8 +24,8 @@
         <h3>Order Form</h3>
 
         <form action="https://formsubmit.co/f7137201a2ebed3169fd4a27c566fada" method="POST">
-            <input type="text" name="name" required>
-            <input type="email" name="email" required>
+            <input type="text" name="name" placeholder="Full Name" required>
+            <input type="email" name="email" placeholder="Email" required>
             <button type="submit">Send</button>
 
             <p>
@@ -42,30 +42,32 @@
                 <option>CHOCOLATES Y ROSAS RAMO</option>
             </select>
             <p>What color(s) would you like to order? Ex: Red, Pink, White, Sunflowers, and/or others</p>
-            <span class="radio-wrapper">
-                <input type="radio" name="colors" id="red1" />
-                <label for="red1">Red</label>
+            <span name="color">
+                <span class="radio-wrapper">
+                    <input type="radio" name="red" id="red1" />
+                    <label for="red1">Red</label>
+                </span>
+                <br>
+                <span class="radio-wrapper">
+                    <input type="radio" name="pink" id="pink1" />
+                    <label for="pink1">Pink</label>
+                </span>
+                <br><span class="radio-wrapper">
+                    <input type="radio" name="white" id="white1" />
+                    <label for="white1">White</label>
+                </span>
+                <br>
+                <span class="radio-wrapper">
+                    <input type="radio" name="sunflower" id="sunflower1" />
+                    <label for="sunflower1">Sunflowers</label>
+                </span>
+                <br><span class="radio-wrapper">
+                    <input type="radio" name="other" id="other1" />
+                    <label for="other1">Other</label>
+                </span>
+                <br>
+                <textarea name="other" placeholder="others" required></textarea>
             </span>
-            <br>
-            <span class="radio-wrapper">
-                <input type="radio" name="colors" id="pink1" />
-                <label for="pink1">Pink</label>
-            </span>
-            <br><span class="radio-wrapper">
-                <input type="radio" name="colors" id="white1" />
-                <label for="white1">White</label>
-            </span>
-            <br>
-            <span class="radio-wrapper">
-                <input type="radio" name="colors" id="sunflower1" />
-                <label for="sunflower1">Sunflowers</label>
-            </span>
-            <br><span class="radio-wrapper">
-                <input type="radio" name="colors" id="other1" />
-                <label for="other1">Other</label>
-            </span>
-            <br>
-            <textarea name="colors" placeholder="others" required></textarea>
             <button type="submit">Send</button>
 
         </form>
