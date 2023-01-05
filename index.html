@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Platicando Con Las Flores</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
@@ -24,15 +25,21 @@
         <h3>Order Form</h3>
 
         <form action="https://formsubmit.co/f7137201a2ebed3169fd4a27c566fada" method="POST">
-            <input type="text" name="name" placeholder="Full Name" required>
-            <input type="email" name="email" placeholder="Email" required>
-            <button type="submit">Send</button>
-
+            <p>Name*:
+                <input type="text" name="name" placeholder="Full Name" required>
+            </p>
+            <p>Email:
+                <input type="email" name="email" placeholder="Email">
+            </p>
+            <p>Phone Number*:
+                <input type="tel" name="phone" placeholder="Phone Number" required>
+            </p>
             <p>
                 What is the item you would like to order?* <br>
                 **Items may vary based on flower season and availability**
             </p>
-            <select name="item">
+            <select name="item" required>
+                <option>Select Item</option>
                 <option>RAMO BUCHON: Arrangement includes</option>
                 <option>MI REINA! RAMO BUCHON: Arrangement includes</option>
                 <option>SMALL BOUQUET 25-40 STEMS</option>
@@ -66,78 +73,49 @@
                     <label for="other1">Other</label>
                 </span>
                 <br>
-                <textarea name="other" placeholder="others" required></textarea>
+                <textarea name="other" placeholder="others"></textarea>
             </span>
+            <p>Product Quantity and Prices</p>
+            <select name="price" required>
+                <option>Select Quantity and Prices</option>
+                <option>25 ROSES/FLOWERS/STEMS $100.00</option>
+                <option>40 ROSES/FLOWERS/STEMS $130.00</option>
+                <option>50 ROSES/FLOWERS/STEMS $150.00</option>
+                <option>75 ROSES/FLOWERS/STEMS $225.00</option>
+                <option>100 ROSES/FLOWERS/STEMS $300.00</option>
+            </select>
+            <br>
+            <div>
+                <input type="checkbox" name="chocolate" id="chocolate" value="chocolate"> <label for="chocolate">With
+                    Chocolates $20.00</label>
+                <br>
+                <input type="checkbox" name="hat" id="hat" value="hat"> <label for="hat">With Hat $50/or please provide
+                    hat with time in advance.</label>
+                <br>
+                <input type="checkbox" name="special-Request" id="special-Request" value="special-Request"> <label
+                    for="special-Request">Other: Special Request</label>
+            </div>
+
+            <!-- <span class="radio-wrapper">
+                <input type="radio" name="chocolate" id="chocolate1" />
+                <label for="chocolate1">With Chocolates $20.00</label>
+            </span>
+            <br>
+            <span class="radio-wrapper">
+                <input type="radio" name="hat" id="hat1" />
+                <label for="hat1">With Hat $50/or please provide hat with time in advance.</label>
+            </span>
+            <br><span class="radio-wrapper">
+                <input type="radio" name="white" id="white1" />
+                <label for="white1">Other: Special Request</label>
+            </span>
+            <br> -->
+            <textarea name="other" placeholder="Special Request"></textarea>
             <button type="submit">Send</button>
 
         </form>
-
-
-        <!-- <form>
-            <label for="name">Your Name*</label>
-            <input type="text" placeholder="Your Name" id="name" name="name" class="form-input" />
-            <label for="email">Your Email</label>
-            <input type="email" placeholder="Email Address" id="email" name="email" class="form-input" />
-            <label for="phone">Phone Number*</label>
-            <input type="tel" placeholder="Phone Number" name="phone" id="phone" class="form-input" />
-            <p>
-                Are you a new or existing customer?
-                <span class="radio-wrapper">
-                    <input type="radio" name="customer-confirm" id="customer-yes" />
-                    <label for="customer-yes">Yes</label>
-                </span>
-                <span class="radio-wrapper">
-                    <input type="radio" name="customer-confirm" id="customer-no" />
-                    <label for="customer-no">No</label>
-                </span>
-            </p>
-            <p>
-                What is the item you would like to order?* <br>
-                **Items may vary based on flower season and availability** <br>
-                <span class="radio-wrapper">
-                    <input type="radio" name="buchon-1" id="buchon-A" />
-                    <label for="customer-yes">RAMO BUCHON: Arrangement includes: Fresh Premium Roses, Luxury Details,
-                        Custom Card</label>
-                </span>
-                <br>
-                <span class="radio-wrapper">
-                    <input type="radio" name="buchon-2" id="buchon-B" />
-                    <label for="customer-no">MI REINA! RAMO BUCHON: Arrangement includes: Fresh Premium Roses,
-                        Rhinestone Crown, Custom Card</label>
-                </span>
-                <br>
-                <span class="radio-wrapper">
-                    <input type="radio" name="bouquet-1" id="bouquet-A" />
-                    <label for="customer-yes">SMALL BOUQUET 25-40 STEMS: Fresh Premium roses and other flowers, greeting
-                        card</label>
-                </span>
-                <br>
-                <span class="radio-wrapper">
-                    <input type="radio" name="bouquet-2" id="bouquet-B" />
-                    <label for="customer-no">SUNFLOWER AND ROSE BOUQUET: Fresh Premium Roses and Sunflowers</label>
-                </span>
-                <br>
-                <span class="radio-wrapper">
-                    <input type="radio" name="bouquet-3" id="bouquet-C" />
-                    <label for="customer-yes">BIRTHDAY/CUMPLEANOS BOUQUET: Fresh Premium Roses and/or other
-                        Flowers</label>
-                </span>
-                <br>
-                <span class="radio-wrapper">
-                    <input type="radio" name="ramo-1" id="ramo-A" />
-                    <label for="customer-no">QUIERES SER? RAMO: Fresh Premium Roses and/or other Flowers</label>
-                </span>
-                <br>
-                <span class="radio-wrapper">
-                    <input type="radio" name="ramo-2" id="ramo-B" />
-                    <label for="customer-no">CHOCOLATES Y ROSAS RAMO Fresh Premium Roses and Chocolates</label>
-                </span>
-            </p>
-            <button type="submit">
-                Submit
-            </button>
-        </form> -->
     </div>
+    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
