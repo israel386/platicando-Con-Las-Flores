@@ -78,11 +78,11 @@ header nav ul li a:hover {
 
 /* HEADER / NAVBAR STYLES END */
 
-.hero {
-    background-image: url('../images/hero-bg.jpg');
+.hero-f {
+    background-image: url('../images/64m7AlA.jpg');
     background-size: cover;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     flex-wrap: wrap;
     align-items: flex-start;
     background-attachment: fixed;

@@ -36,75 +36,78 @@
         </nav>
     </header>
     <section class="hero">
-        <div class="hero-form" id="Order">
-            <h1>Order Form</h1>
-            <br>
-            <form action="https://formsubmit.co/f7137201a2ebed3169fd4a27c566fada" method="POST">
-                <p>Name*:
-                    <input type="text" name="name" placeholder="Full Name" required>
-                </p>
-                <p>Email:
-                    <input type="email" name="email" placeholder="Email">
-                </p>
-                <p>Phone Number*:
-                    <input type="tel" name="phone" placeholder="Phone Number" required>
-                </p>
-                <p>
-                    What is the item you would like to order?* <br>
-                    **Items may vary based on flower season and availability**
-                </p>
-                <select name="item" required>
-                    <option>Select Item</option>
-                    <option>RAMO BUCHON</option>
-                    <option>MI REINA! RAMO BUCHON</option>
-                    <option>SMALL BOUQUET 25-40 STEMS</option>
-                    <option>SUNFLOWER AND ROSE BOUQUET</option>
-                    <option>BIRTHDAY/CUMPLEANOS BOUQUET</option>
-                    <option>QUIERES SER? RAMO</option>
-                    <option>CHOCOLATES Y ROSAS RAMO</option>
-                </select>
+        <div class="hero-f">
+            <div class="hero-form" id="Order">
+                <h1>Order Form</h1>
                 <br>
-                <br>
-                <p>What color(s) would you like to order? Ex: Red, Pink, White, Sunflowers, and/or others</p>
+                <form action="https://formsubmit.co/f7137201a2ebed3169fd4a27c566fada" method="POST">
+                    <p>Name*:
+                        <input type="text" name="name" placeholder="Full Name" required>
+                    </p>
+                    <p>Email:
+                        <input type="email" name="email" placeholder="Email">
+                    </p>
+                    <p>Phone Number*:
+                        <input type="tel" name="phone" placeholder="Phone Number" required>
+                    </p>
+                    <p>
+                        What is the item you would like to order?* <br>
+                        **Items may vary based on flower season and availability**
+                    </p>
+                    <select name="item" required>
+                        <option>Select Item</option>
+                        <option>RAMO BUCHON</option>
+                        <option>MI REINA! RAMO BUCHON</option>
+                        <option>SMALL BOUQUET 25-40 STEMS</option>
+                        <option>SUNFLOWER AND ROSE BOUQUET</option>
+                        <option>BIRTHDAY/CUMPLEANOS BOUQUET</option>
+                        <option>QUIERES SER? RAMO</option>
+                        <option>CHOCOLATES Y ROSAS RAMO</option>
+                    </select>
+                    <br>
+                    <br>
+                    <p>What color(s) would you like to order? Ex: Red, Pink, White, Sunflowers, and/or others</p>
 
-                <input type="checkbox" name="red" id="red" value="red"> <label for="red">Red</label>
-                <br>
-                <input type="checkbox" name="pink" id="pink" value="pink"> <label for="pink">Pink</label>
-                <br>
-                <input type="checkbox" name="white" id="white" value="white"> <label for="white">White</label>
-                <br>
-                <input type="checkbox" name="sunflower" id="sunflower" value="sunflower"> <label
-                    for="sunflower">Sunflower</label>
-                <br>
-                <input type="checkbox" name="Other" id="Other" value="Other"> <label for="Other">Other</label>
-                <br>
-                <textarea name="special-Request:" placeholder="Special Request"></textarea>
-                <br>
-                <br>
-                <p>Product Quantity and Prices</p>
-                <select name="price" required>
-                    <option>Select Quantity and Prices</option>
-                    <option>25 ROSES/FLOWERS/STEMS $100.00</option>
-                    <option>40 ROSES/FLOWERS/STEMS $130.00</option>
-                    <option>50 ROSES/FLOWERS/STEMS $150.00</option>
-                    <option>75 ROSES/FLOWERS/STEMS $225.00</option>
-                    <option>100 ROSES/FLOWERS/STEMS $300.00</option>
-                </select>
-                <br>
-                <input type="checkbox" name="chocolate" id="chocolate" value="chocolate"> <label for="chocolate">With
-                    Chocolates $20.00</label>
-                <br>
-                <input type="checkbox" name="hat" id="hat" value="hat"> <label for="With Hat $50/or please provide
+                    <input type="checkbox" name="red" id="red" value="red"> <label for="red">Red</label>
+                    <br>
+                    <input type="checkbox" name="pink" id="pink" value="pink"> <label for="pink">Pink</label>
+                    <br>
+                    <input type="checkbox" name="white" id="white" value="white"> <label for="white">White</label>
+                    <br>
+                    <input type="checkbox" name="sunflower" id="sunflower" value="sunflower"> <label
+                        for="sunflower">Sunflower</label>
+                    <br>
+                    <input type="checkbox" name="Other" id="Other" value="Other"> <label for="Other">Other</label>
+                    <br>
+                    <textarea name="special-Request:" placeholder="Special Request"></textarea>
+                    <br>
+                    <br>
+                    <p>Product Quantity and Prices <br>*Delivery FEE outside 35 mile radius $50.00*</p>
+                    <select name="price" required>
+                        <option>Select Quantity and Prices</option>
+                        <option>25 ROSES/FLOWERS/STEMS $100.00</option>
+                        <option>40 ROSES/FLOWERS/STEMS $130.00</option>
+                        <option>50 ROSES/FLOWERS/STEMS $150.00</option>
+                        <option>75 ROSES/FLOWERS/STEMS $225.00</option>
+                        <option>100 ROSES/FLOWERS/STEMS $300.00</option>
+                    </select>
+                    <br>
+                    <input type="checkbox" name="chocolate" id="chocolate" value="chocolate"> <label
+                        for="chocolate">With
+                        Chocolates $20.00</label>
+                    <br>
+                    <input type="checkbox" name="hat" id="hat" value="hat"> <label for="With Hat $50/or please provide
             hat with time in advance.">With Hat $50/or please provide
-                    hat with time in advance.</label>
-                <br>
-                <input type="checkbox" name="special-Request" id="special-Request" value="special-Request"> <label
-                    for="special-Request">Other: Special Request</label>
-                <br>
-                <textarea name="special-Request:" placeholder="Special Request"></textarea>
-                <br>
-                <button type="submit">Send</button>
-            </form>
+                        hat with time in advance.</label>
+                    <br>
+                    <input type="checkbox" name="special-Request" id="special-Request" value="special-Request"> <label
+                        for="special-Request">Other: Special Request</label>
+                    <br>
+                    <textarea name="special-Request:" placeholder="Special Request"></textarea>
+                    <br>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
         </div>
     </section>
     <script src="./assets/js/script.js"></script>
