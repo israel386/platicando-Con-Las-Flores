@@ -89,7 +89,7 @@ header nav ul li a:hover {
 
 .flower {
     margin: 20px;
-    flex: 1;
+    flex: 0 0 500px;
     background: rgb(150, 0, 0);
     color: var(--primary-color);
 }
@@ -119,8 +119,17 @@ header nav ul li a:hover {
 
 /* TRAINER STYLES END */
 
-.hero-f {
+.hero {
     background-image: url('../images/64m7AlA.jpg');
+    background-size: cover;
+    justify-content: left;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    background-attachment: fixed;
+    background-position: 50%;
+}
+
+.hero-f {
     background-size: cover;
     display: flex;
     justify-content: left;
