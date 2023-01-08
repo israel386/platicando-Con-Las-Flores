@@ -348,6 +348,7 @@ header nav ul li a:hover {
         padding-bottom: 0;
         justify-content: center;
         position: relative;
+
     }
 
     header h1 {
@@ -421,6 +422,11 @@ header nav ul li a:hover {
     .flower-bio h4 {
         display: block;
     }
+
+    .hero {
+        background-size: contain !important;
+    }
+
 }
 
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
