@@ -422,11 +422,6 @@ header nav ul li a:hover {
     .flower-bio h4 {
         display: block;
     }
-
-    .hero {
-        background-size: contain !important;
-    }
-
 }
 
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
